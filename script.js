@@ -520,9 +520,9 @@ function draw() {
             ctx.shadowBlur = 10;
             ctx.shadowColor = colors.textMain;
         }
-        ctx.fillText("DIMENSION FLAP", canvas.width / 2, 200);
+        ctx.fillText("GAME X1 BY RIAD", canvas.width / 2, 200);
         ctx.shadowBlur = 0;
-        if (!colors.glow) ctx.strokeText("DIMENSION FLAP", canvas.width / 2, 200);
+        if (!colors.glow) ctx.strokeText("GAME X1 BY RIAD", canvas.width / 2, 200);
 
     } else if (state.current == state.over) {
         ctx.fillStyle = colors.glow ? "#ff0055" : "#e74c3c";
@@ -556,5 +556,6 @@ function loop() {
     frames++;
     requestAnimationFrame(loop);
 }
+
 
 loop();
